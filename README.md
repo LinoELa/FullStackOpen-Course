@@ -121,3 +121,40 @@ El curso está dividido en varias partes que progresan desde conceptos básicos 
 - **Documentación**: Cada parte incluye documentación detallada
 - **Ejemplos**: Repositorios de ejemplo disponibles
 - **Comunidad**: Foros y grupos de estudio activos
+
+El error que estás viendo es muy común en Git. Tu rama local tiene cambios que no están sincronizados con el repositorio remoto. Aquí tienes las opciones para resolverlo:
+
+## 🔧 **Opciones para Resolver el Problema:**
+
+### **Opción 1: Pull y luego Push (Recomendado)**
+
+```bash
+git pull origin main
+git push origin main
+```
+
+### **Opción 2: Si hay conflictos, resolverlos primero**
+
+```bash
+git pull origin main
+# Resolver conflictos si los hay
+git add .
+git commit -m "Resuelto conflictos"
+git push origin main
+```
+
+### **Opción 3: Si quieres forzar el push (¡CUIDADO!)**
+
+```bash
+git push --force origin main
+```
+
+⚠️ **Solo usa esta opción si estás seguro de que quieres sobrescribir los cambios remotos**
+
+## 🤔 **¿Qué prefieres hacer?**
+
+1. **¿Quieres que ejecute `git pull` primero** para sincronizar con el remoto?
+2. **¿Tienes cambios importantes** que no quieres perder?
+3. **¿Quieres ver el estado actual** de tu repositorio?
+
+Dime qué opción prefieres y te ayudo a ejecutar los comandos necesarios. La opción más segura es hacer `git pull` primero para integrar los cambios remotos y luego hacer `git push`.
