@@ -1,14 +1,46 @@
+// |============== Renderizar Arreglos ==================|
+
+// const App = () => {
+//   const friends = ["Peter", "Maya"];
+
+//   return (
+//     <div>
+//       <p>{friends}</p>
+//     </div>
+//   );
+// };
+
+// |============== Renderizar objetos ==================|
+
+// const App = () => {
+//   const friends = [
+//     { name: "Peter", age: 4 },
+//     { name: "Maya", age: 10 },
+//   ];
+
+//   return (
+//     <div>
+//       <p>
+//         {friends[0].name} {friends[1].age}
+//       </p>
+//       <p>
+//         {friends[1].name} {friends[1].age}
+//       </p>
+//     </div>
+//   );
+// };
+
 // |============== props: pasar datos a componentes ==================|
 
-const Hello = (props) => {
-  console.log(props);
-  return (
-    <div>
-      {/* <p> Hola {props.name}</p> */}
-      Hello {props.name}, you are {props.age} years old
-    </div>
-  );
-};
+// const Hello = (props) => {
+//   console.log(props);
+//   return (
+//     <div>
+//       {/* <p> Hola {props.name}</p> */}
+//       Hello {props.name}, you are {props.age} years old
+//     </div>
+//   );
+// };
 
 // const App = () => {
 //   const name = "Peter";
