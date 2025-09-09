@@ -8,6 +8,11 @@ const App = () => {
   const part3 = "State of component";
   const exercises3 = 14;
 
+  const friends = [
+    { name: "Peter", age: 4 },
+    { name: "Maya", age: 10 },
+  ];
+
   return (
     <div>
       <Header course={course} />
@@ -34,32 +39,33 @@ const App = () => {
 // |===== Header  =====|
 
 const Header = (props) => {
-  console.log(props);
   return <h1>{props.course}</h1>;
 };
+
+// |===== Part  =====|
+
+const Part = (props) => {
+  return (
+    <>
+      {props.name} {props.exercices}
+    </>
+  );
+};
+
 // |===== Content  =====|
 
 const Content = (props) => {
-  console.log(props);
   return (
     <div>
-      <p>
-        {props.part1} {props.exercises1}
-      </p>
-      <p>
-        {props.part2} {props.exercises2}
-      </p>
-      <p>
-        {props.part3} {props.exercises3}
-      </p>
+      <Part name={props.part1} exercices={props.exercises1} />
+      <Part name={props.part2} exercices={props.exercises2} />
+      <Part name={props.part3} exercices={props.exercises3} />
     </div>
   );
 };
 
 // |===== Total  =====|
 const Total = (props) => {
-  console.log(props);
-
   const total_exercices =
     props.exercises1 + props.exercises2 + props.exercises3;
 
